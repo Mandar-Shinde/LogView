@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>807</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>MS Shell Dlg 2</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Find Text</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QGridLayout">
+     <property name="margin">
+      <number>0</number>
+     </property>
+     <property name="spacing">
+      <number>6</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="bu_reset">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>&amp;Reset</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QGroupBox" name="groupBox">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="title">
+        <string>Filter</string>
+       </property>
+       <widget class="QRadioButton" name="rb_color">
+        <property name="geometry">
+         <rect>
+          <x>14</x>
+          <y>18</y>
+          <width>150</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Color Out</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="rb_delete">
+        <property name="geometry">
+         <rect>
+          <x>176</x>
+          <y>18</y>
+          <width>93</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Delete</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="sb_time">
+        <property name="geometry">
+         <rect>
+          <x>598</x>
+          <y>16</y>
+          <width>69</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <number>15</number>
+        </property>
+        <property name="maximum">
+         <number>3600</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>481</x>
+          <y>20</y>
+          <width>113</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>update in ( Sec)</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QListWidget" name="l_tag">
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="selectionMode">
+        <enum>QAbstractItemView::MultiSelection</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="e_view"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
